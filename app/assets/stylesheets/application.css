@@ -28,11 +28,9 @@ body {
 h1, h2{
     display: block;
     font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-
-
 
 p, td {
     margin: 33px;
@@ -50,9 +48,10 @@ td {
 
 div{
     display: block;
+    margin-bottom: 0px;
 }
 
-field{
+div.field{
     margin-bottom: 10px;
 }
 
