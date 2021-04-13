@@ -26,8 +26,8 @@
 </div>
   <%end%>
 
-  <a><%= link_to "Show", book_path(@book.id) %></a>
+  <%= link_to "Show", book_path(@book.id) %>
   <span>|</span>
-  <a><%= link_to "Back", "/books/" %></a>
+  <%= link_to "Back", books_path %>
 
 </body>
