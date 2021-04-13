@@ -1,6 +1,17 @@
 <body>
     <h1>Editing Book</h1>
 
+<% if @book.errors.any? %>
+<div id="errorbox">
+  <h2><%= @book.errors.count %><span> error</span></h2>
+<% @book.errors.full_messages.each do |message| %>
+  <ul>
+    <li><%= message %></li>
+  </ul>
+<% end %>
+</div>
+<% end %>
+
 <%= form_with model:@book, url:"/books/#{@book.id}", local:true do |f| %>
 <div class="field">
   <label>Title</label>
